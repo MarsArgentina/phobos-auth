@@ -1,0 +1,45 @@
+.phobos-social {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin-top: 1em;
+}
+
+/* Main style applied to all buttons */
+.phobos-social button.phobos-social-btn {
+	display: flex !important;
+
+	align-items: center;
+	justify-content: center;
+	gap: 0.4em;
+}
+
+.phobos-social button.phobos-social-btn span {
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.phobos-social button.phobos-social-btn svg {
+	width: 1.1rem;
+	height: 1.1rem;
+}
+
+/* Style applied to Discord button */
+.phobos-social button.phobos-discord-btn {
+	/* Override Theme and UltimateMember colors */
+	background-color: #5865F2!important;
+	color: white !important; /* Color for both the icon and text */
+	transition: all 0.2s ease-in-out;
+}
+
+.phobos-social button.phobos-discord-btn:hover,
+.phobos-social button.phobos-discord-btn:active,
+.phobos-social button.phobos-discord-btn:focus {
+	background-color: #7983f5!important;
+	outline: none;
+}
+
+.phobos-social button.phobos-discord-btn:hover {
+	transform: scale(1.02);
+}

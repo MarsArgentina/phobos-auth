@@ -1,0 +1,136 @@
+.phobos-social div {
+  --disconnect-color: #CC0000;
+  --external-radius: 0.4em;
+  --internal-gap: 4px;
+  --small-font: 0.8rem;
+  --tight-padding: 0.2em;
+  --loose-padding: 0.5em;
+}
+
+.phobos-discord {
+  --brand-main-color: #5865f2;
+  --brand-highlight-color: #7983f5;
+
+  --brand-text-color: white;
+}
+
+.phobos-social .big-connect {
+  border-radius: var(--external-radius);
+  color: var(--brand-text-color);
+  background-color: var(--brand-main-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: calc(2 * var(--internal-gap));
+  padding: var(--tight-padding) var(--loose-padding);
+  padding-left: calc(2 * var(--loose-padding));
+	text-decoration: none!important;
+
+	transition: all 0.2s ease-in-out;
+}
+
+.phobos-social .big-connect:hover,
+.phobos-social .big-connect:active,
+.phobos-social .big-connect:focus {
+	background-color: var(--brand-highlight-color)!important;
+}
+
+.phobos-social .big-connect:hover {
+  transform: scale(1.02);
+}
+
+.phobos-social .big-connect svg {
+	width: 2.4em;
+	margin: 0.5em 0;
+}
+
+.phobos-social .big-connect svg.plus {
+  width: 2.5em;
+	margin: 0;
+}
+
+.phobos-social .big-connect span {
+  font-weight: 600;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.phobos-social .info-header {
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--internal-gap);
+  padding: var(--tight-padding) var(--loose-padding);
+
+  border-top-left-radius: var(--external-radius);
+  border-top-right-radius: var(--external-radius);
+  background-color: var(--brand-main-color);
+  color: var(--brand-text-color);
+
+  font-size: var(--small-font);
+}
+
+.phobos-social .info-header svg {
+  width: 1em;
+}
+
+.phobos-social .info {
+  border-bottom-left-radius: var(--external-radius);
+  border-bottom-right-radius: var(--external-radius);
+
+  display: flex;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--loose-padding);
+  gap: var(--internal-gap);
+}
+
+.phobos-social .info .disconnect {
+  text-decoration: none!important;
+  color: var(--disconnect-color);
+
+  display: flex;
+  border: 1px solid var(--disconnect-color) !important;
+
+  border-radius: calc(var(--external-radius) * 0.8);
+  padding: var(--tight-padding) var(--loose-padding);
+
+  font-size: var(--small-font);
+	transition: all 0.2s ease-in-out;
+}
+
+.phobos-social .info .disconnect:hover,
+.phobos-social .info .disconnect:active,
+.phobos-social .info .disconnect:focus {
+	color: white;
+	background-color: var(--disconnect-color)!important;
+}
+
+.phobos-social .info .disconnect:hover {
+  transform: scale(1.05);
+}
+
+.phobos-social .info .disconnect svg {
+  width: 1.3em;
+}
+
+.phobos-discord .info img {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+}
+
+.phobos-discord .info span {
+  font-weight: 300;
+  flex-grow: 1;
+}
+
+.phobos-discord .info b {
+  font-weight: 600;
+}

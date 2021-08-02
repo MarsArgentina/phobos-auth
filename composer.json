@@ -1,0 +1,16 @@
+{
+    "name": "pablo/phobos-nsac",
+    "description": "Plugin para TMSA destinado al manejo del Nasa Space Apps Challenge.",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "The Mars Society Argentina",
+            "email": "desarrollo@marssociety.com.ar"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "wohali/oauth2-discord-new": "^1.1"
+    }
+}

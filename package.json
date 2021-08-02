@@ -1,0 +1,62 @@
+{
+  "name": "phobos-auth",
+  "version": "1.0.0",
+  "description": "Settings page for Phobos Auth, WordPress plugin",
+  "scripts": {
+    "start": "run-p -l type-check:watch start:dev",
+    "lint": "eslint src/*.tsx",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "start:dev": "webpack serve --mode development",
+    "build": "rimraf build && webpack --mode production",
+    "build:dev": "rimraf build && webpack --mode development",
+    "archive": "dir-archiver --dest ./release.zip --exclude "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarsArgentina/phobos.git"
+  },
+  "keywords": [
+    "wordpress",
+    "settings",
+    "react",
+    "phobos"
+  ],
+  "author": "The Mars Society Argentina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarsArgentina/phobos/issues"
+  },
+  "homepage": "https://github.com/MarsArgentina/phobos#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/wordpress__components": "^9.8.6",
+    "@types/wpapi": "^1.1.0",
+    "@wordpress/api-fetch": "^5.2.1",
+    "@wordpress/element": "^2.20.3",
+    "@wordpress/eslint-plugin": "^9.0.6",
+    "@wordpress/i18n": "^4.1.1",
+    "@wordpress/prettier-config": "^1.0.5",
+    "autoprefixer": "^10.2.6",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^5.2.6",
+    "dir-archiver": "^1.2.0",
+    "eslint": "^7.29.0",
+    "eslint-webpack-plugin": "^2.5.4",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^6.1.0",
+    "prettier": "npm:wp-prettier@^2.2.1-beta-1",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^12.1.0",
+    "typescript": "^4.3.4",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  }
+}

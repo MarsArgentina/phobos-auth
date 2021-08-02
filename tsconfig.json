@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "es6",
+		"moduleResolution": "node",
+		"declaration": false,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"jsx": "preserve",
+		"jsxFactory": "wp.element.createElement",
+		"jsxFragmentFactory": "wp.element.Fragment",
+		"noLib": false,
+		"skipLibCheck": true,
+		"esModuleInterop": true
+	},
+
+	"include": [ "**/*" ],
+	"exclude": [ "node_modules" ]
+}
